@@ -1,0 +1,44 @@
+.message-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.message-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.message-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.message-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.moon-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 800px;
+  opacity: 0.3;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e53e3e;
+}
